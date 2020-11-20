@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>PeakDnD–HOME</title>
+		<meta name="description" content="">
+		<meta name="author" content="Tony Madonna">
+		<meta http-equiv="refresh" content="60">
+		<meta name="viewport" content="width=device-width, inital-scale=1.0">
+
+		<link rel="stylesheet" href="../css/normalize.css">
+		<link rel="stylesheet" href="../css/homePage.css">
+		<link href='https://fonts.googleapis.com/css?family=Croissant One' rel='stylesheet'>
+		<link rel="stylesheet" href="../webfontkit-peakDnD/stylesheet.css" type="text/css">
+
+		<script src="https://kit.fontawesome.com/3ba375246e.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+	</head>
+	
+	<body>
+
+		<div id="Home">
+
+			<button class="startSignUp" onclick="document.getElementById('id01').style.display='block'">Login/Sign Up</button>
+
+			<div id="id01" class="modal">
+				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				<form action="sign_up.php" class="sign-up-form">
+					<div class="sign-up-container">
+						<h1>Sign Up</h1>
+						<p>Fill out this form to be considered for quests!</p>
+						<hr>
+
+						<label for="email"><b>Email</b></label>
+						<input type="text" placeholder="Enter Email" name="email" required>
+
+						<label for="psw"><b>Password</b></label>
+						<input type="password" placeholder="Enter Password" name="psw" required>
+
+						<label for="psw-repeat"><b>Retype Password</b></label>
+						<input type="password" placeholder="Retype Password" name="psw-repeat" required>
+
+						<label>
+							<input type="checkbox" checked="checked" name="remember-me" class="remember-me">Remember Me
+						</label>
+
+						<p>By creating an account. you agree to our <a href="" target="">Adventurer's Hazards & Guidelines</a>.</p>
+
+						<div class="clear-fix">
+							<button type="button" class="cancelbtn">Cancel</button>
+							<button type="submit" class="signupbtn">Sign Up</button>
+							<button type="submit" class="loginbtn">Login</button></label>
+						</div>
+					</div>
+				</form>
+			</div>
+
+
+			<img src="../banners/peakLogo-lightningBanner.jpg" class="center">
+
+			<form id="searchForm" class="search2" method="get" action="peakSearch.html" value="">
+  					<input id="homeSearch" class="search2" type="text" placeholder="Search.." name="search">
+  					<input class="search2" type="hidden" name="siteserach" value="peakHome.html">
+					<button type="submit"><i class="fab fa-searchengin"></i></button>
+			</form>
+
+			<div id="pageLinks">
+				<div class="dropdown">
+					<a href="peakCampaignVids.html" target=""><button class="dropbtn">CAMPAIGN <br/> VIDEOS</button></a>
+						<div class="dropdown-content">
+							<a href="peakIntoTheFey.html" target="">INTO THE FEY</a>
+							<a href="" target="">RIME OF THE FROSTMAIDEN</a>
+							<a href="" target="">ICEWINDALE</a>
+						</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn">CAMPAIGN <br/> DIARIES</button>
+						<div class="dropdown-content">
+							<a href="" target="" style="font-size: ;">PLAYERS</a>
+							<a href="" target="" style="font-size: ;">DUNGEON MASTER</a>
+						</div>
+				</div>
+				<div class="dropdown">
+					<a href="peakInterests.html" target=""><button class="dropbtn">PEAKED <br/> INTERESTS</button></a>
+						<div class="dropdown-content">
+							<a href="peakInterests.html" target="" style="font-size: ;">HOW TO PLAY</a>
+							<a href="peakInterests.html" target="">D&D PHILOSOPHY</a>
+							<a href="peakInterests.html" target="" style="font-size: ;">DUNGEON MASTER TIPS</a>
+							<a href="peakInterests.html" target="" style="font-size: ;">HOUSE TABLE RULES</a>
+						</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn">CRITICAL <br/> GEAR</button>
+						<div class="dropdown-content">
+							<a href="https://teespring.com/stores/peakdnd" target="_blank" style="font-size: ;">TEESPRING</a>
+							<a href="https://www.redbubble.com/people/peakdnd/shop" target="_blank" style="font-size: ;">REDBUBBLE</a>
+						</div>
+				</div>
+				<div class="dropdown">
+					<a href="peakContact.html" target=""><button class="dropbtn">CONTACT <br/> US</button></a>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div id="links" class="links">
+				<a href="" target=""><h4>ABOUT</h4></a>
+				<a href="peakContact.html" target=""><h4>CONTACT US</h4></a>
+			</div>
+			<div></div>
+			<div id="socialMedia" class="socialMedia">
+				<a href="https://www.instagram.com/peakdnd/" target="_blank"><button id="instagram" type="submit"><i class="fab fa-instagram"></i></button></a>
+				<a href="https://www.youtube.com/channel/UCwrC2xURgzXyUSNdnJJ9nsQ" target="_blank"><button id="youtube" type="submit"><i class="fab fa-youtube"></i></button></a>
+			</div>
+		</footer>
+		
+		<script src="../js/peakHome.js"></script>
+		<script src="../js/signUp-popup.js"></script>
+	</body>
+</html>
