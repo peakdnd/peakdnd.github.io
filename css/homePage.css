@@ -35,6 +35,7 @@ body {background-color: #000000;}
 * {box-sizing: border-box;}
 
 .startSignUp {
+	float: right;
 	font-family: 'peakdnd';
 	font-size: 22px;
 	background-color: #5E8F77;
