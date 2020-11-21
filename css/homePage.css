@@ -35,7 +35,6 @@ body {background-color: #000000;}
 * {box-sizing: border-box;}
 
 .startSignUp {
-	float: right;
 	font-family: 'peakdnd';
 	font-size: 22px;
 	background-color: #5E8F77;
@@ -49,7 +48,7 @@ body {background-color: #000000;}
 }
 .startSignUp:hover {opacity: 1; color: #000;}
 .sign-up-form {background-color: white; top: 50px; font-family:'peakdnd';}
-.sign-up-container {padding: 20px;}
+.sign-up-container {padding: 20px; float:right;}
 
 .sign-up-container input[type=text], input[type=password] {
 	width: 100%;
