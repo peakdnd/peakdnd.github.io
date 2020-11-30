@@ -26,7 +26,7 @@
 
 			<button class="startSignUp" onclick="document.getElementById('id01').style.display='block'">Login/Sign Up</button>
 
-			<div id="id01" class="modal">
+			<div id="id01" class="Login-SignUp">
 				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
 				<form action="sign_up.php" class="sign-up-form">
 					<div class="sign-up-container">
@@ -50,7 +50,7 @@
 						<p>By creating an account. you agree to our <a href="" target="">Adventurer's Hazards & Guidelines</a>.</p>
 
 						<div class="clear-fix">
-							<button type="button" class="cancelbtn">Cancel</button>
+							<button onclick="document.getElementbyId('id01').style.display='none'" type="button" class="cancelbtn">Cancel</button>
 							<button type="submit" class="signupbtn">Sign Up</button>
 							<button type="submit" class="loginbtn">Login</button></label>
 						</div>
