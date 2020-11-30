@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>INTO THE FEY</title>
+		<meta name="description" content="">
+		<meta name="author" content="Tony Madonna">
+		<meta http-equiv="refresh" content="">
+		<meta name="viewport" content="width=device-width, inital-scale=1.0">
+
+		<link rel="stylesheet" href="../css/normalize.css">
+		<link rel="stylesheet" href="../css/peak-IntoTheFey.css">
+		<link href='https://fonts.googleapis.com/css?family=Croissant One' rel='stylesheet'>
+		<link rel="stylesheet" href="../webfontkit-peakDnD/stylesheet.css" type="text/css">
+
+		<script src="https://kit.fontawesome.com/3ba375246e.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=3.0.1"></script>
+		<script type="text/javascript" src="js/infinite-rotator.js"></script>
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
+	</head>
+	
+	<body>
+
+		<div id="Home">
+
+			<h2 id="linkHome"><a href="peakHome.html">HOME</a></h2>
+			<img src="../banners/PEAK DND - web banner3- transpt bkgd.png" class="center">
+
+			<form id="searchForm" class="search2" method="get" action="peakWelcome.html" value="">
+  					<input id="homeSearch" class="search2" type="text" placeholder="Search.." name="search">
+  					<input class="search2" type="hidden" name="siteserach" value="default.html">
+					<button type="submit"><i class="fab fa-searchengin"></i></button>
+			</form>
+
+			<div id="pageLinks">
+				<div class="dropdown">
+					<a href="peakCampaignVids.html" target=""><button class="dropbtn">CAMPAIGN <br/> VIDEOS</button></a>
+						<div class="dropdown-content">
+							<a href="peakIntoTheFey.html" target="">INTO THE FEY</a>
+							<a href="" target="">RIME OF THE FROSTMAIDEN</a>
+							<a href="" target="">ICEWINDALE</a>
+						</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn">CAMPAIGN <br/> DIARIES</button>
+						<div class="dropdown-content">
+							<a href="" target="" style="font-size: ;">PLAYERS</a>
+							<a href="" target="" style="font-size: ;">DUNGEON MASTER</a>
+						</div>
+				</div>
+				<div class="dropdown">
+					<a href="peakInterests.html" target=""><button class="dropbtn">PEAKED <br/> INTERESTS</button></a>
+						<div class="dropdown-content">
+							<a href="" target="" style="font-size: ;">D&D PHILOSOPHY</a>
+							<a href="" target="" style="font-size: ;">HOW TO PLAY</a>
+							<a href="" target="" style="font-size: ;">DUNGEON MASTER TIPS</a>
+							<a href="" target="" style="font-size: ;">HOUSE TABLE RULES</a>
+						</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn">CRITICAL <br/> GEAR</button>
+						<div class="dropdown-content">
+							<a href="https://teespring.com/stores/peakdnd" target="_blank" style="font-size: ;">TEESPRING</a>
+							<a href="https://www.redbubble.com/people/peakdnd/shop" target="_blank" style="font-size: ;">REDBUBBLE</a>
+						</div>
+				</div>
+				<div class="dropdown">
+					<a href="peakContact.html" target=""><button class="dropbtn">CONTACT <br/> US</button></a>
+				</div>
+			</div>
+
+			<div id="rotatingBanner">
+				<img class="rotatingItem" src="../banners/campaignVids-trans.png" alt="Campaign Videos banner" width="900" height="350">
+				<img class="rotatingItem" src="../banners/contactUs-trans.png" alt="Contact Us banner" width="900" height="350">
+				<img class="rotatingItem" src="../banners/peakLogo-lightningBanner.jpg" alt="Peaked Interests banner" width="900" height="350">
+			</div>
+
+			<div id="test">
+			<div id="test1">FEY COLOR PALETTE 1</div>
+			<div id="test2">FEY COLOR PALETTE 2</div>
+			<div id="test3">FEY COLOR PALETTE 3</div>
+			<div id="test4">FEY COLOR PALETTE 4</div>
+			<div id="test5">FEY COLOR PALETTE 5</div>
+			</div>
+	
+		</div>
+			
+		<footer>
+			<div id="links" class="links">
+				<a href="" target=""><h4>ABOUT</h4></a>
+				<a href="peakContact.html" target=""><h4>CONTACT US</h4></a>
+			</div>
+			<div></div>
+			<div id="socialMedia" class="socialMedia">
+				<a href="https://www.instagram.com/peakdnd/" target="_blank"><button id="instagram" type="submit"><i class="fab fa-instagram"></i></button></a>
+				<a href="https://www.youtube.com/channel/UCwrC2xURgzXyUSNdnJJ9nsQ" target="_blank"><button id="youtube" type="submit"><i class="fab fa-youtube"></i></button></a>
+			</div>
+		</footer>
+
+	</body>
+
+<script type="../js/TEMPLATE.js"></script>
+
+<script type="text/javascript">
+	$(window).load(function() {
+    var InfiniteRotator = {
+        init: function() {
+            var initialFadeIn = 1000;
+
+            var itemInterval = 5000;
+
+            var fadeTime = 2500;
+
+            var numberOfItems = $('.rotatingItem').length;
+
+            var currentItem = 0;
+
+            $('.rotatingItem').eq(currentItem).fadeIn(initialFadeIn);
+
+            var infiniteLoop = setInterval(function() {
+                $('.rotatingItem').eq(currentItem).fadeOut(fadeTime);
+
+                if (currentItem == numberOfItems - 1) {
+                    currentItem = 0;
+                } else {
+                    currentItem++;
+                }
+                $('.rotatingItem').eq(currentItem).fadeIn(fadeTime);
+
+            }, itemInterval);
+        }
+    };
+
+    InfiniteRotator.init();
+
+});
+</script>
+
+
+</html>

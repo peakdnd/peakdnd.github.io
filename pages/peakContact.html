@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>PeakDnD–CONTACT US</title>
+		<meta name="description" content="">
+		<meta name="author" content="Tony Madonna">
+		<meta http-equiv="refresh" content="">
+		<meta name="viewport" content="width=device-width, inital-scale=1.0">
+
+		<link rel="stylesheet" href="../css/normalize.css">
+		<link rel="stylesheet" href="../css/contactPage.css">
+		<link href='https://fonts.googleapis.com/css?family=Croissant One' rel='stylesheet'>
+		<link rel="stylesheet" href="../webfontkit-peakDnD/stylesheet.css" type="text/css">
+
+		<script src="https://kit.fontawesome.com/3ba375246e.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+	</head>
+
+	<body>
+
+		<div id="Home">
+
+			<h2 id="linkHome"><a href="peakHome.html">HOME</a></h2>
+			<img src="../banners/contactUs-trans.png" class="center">
+
+			<div id="pageLinks">
+				<div class="dropdown">
+					<a href="peakCampaignVids.html" target=""><button class="dropbtn">CAMPAIGN <br/> VIDEOS</button></a>
+						<div class="dropdown-content">
+							<a href="peakIntoTheFey.html" target="">INTO THE FEY</a>
+							<a href="" target="">RIME OF THE FROSTMAIDEN</a>
+							<a href="" target="">ICEWINDALE</a>
+						</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn">CAMPAIGN <br/> DIARIES</button>
+						<div class="dropdown-content">
+							<a href="" target="" style="font-size: ;">PLAYERS</a>
+							<a href="" target="" style="font-size: ;">DUNGEON MASTER</a>
+						</div>
+				</div>
+				<div class="dropdown">
+					<a href="peakInterests.html" target=""><button class="dropbtn">PEAKED <br/> INTERESTS</button></a>
+						<div class="dropdown-content">
+							<a href="" target="" style="font-size: ;">D&D PHILOSOPHY</a>
+							<a href="" target="" style="font-size: ;">HOW TO PLAY</a>
+							<a href="" target="" style="font-size: ;">DUNGEON MASTER TIPS</a>
+							<a href="" target="" style="font-size: ;">HOUSE TABLE RULES</a>
+						</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn">CRITICAL <br/> GEAR</button>
+						<div class="dropdown-content">
+							<a href="https://teespring.com/stores/peakdnd" target="_blank">TEESPRING</a>
+							<a href="https://www.redbubble.com/people/peakdnd/shop" target="_blank">REDBUBBLE</a>
+						</div>
+				</div>
+			</div>
+
+			<p id="prompts">Having trouble finding something?<br/> Have questions about any of our content? Want to connect with one of us?</p>
+			<p id="submit">Submit your sidequest and after a long rest, we will do our best to complete it!</p>
+
+			<div id="contactForm">
+				<form id="contactUs" action="mailto:tmadonna22@gmail.com" method="get" enctype="multipart/form-data" name="emailForm">
+					<p class="name">NAME:</p>
+					<input type="text" name="contactName" class="name">
+					<p class="email">EMAIL:</p>
+					<input type="EMAIL" name="userEmail" class="email">
+					<p class="query">QUERY:</p>
+					<textarea name="message" class="query"></textarea>
+					<button class="sendQuery" type="submit" action="contact.php" value="submit"><label>ROLL TO HIT</label><br><i class="fas fa-dice-d20"></i></button>
+				</form>
+			</div>
+		</div>
+	
+		<script src="../js/contactUs.js"></script>
+	</body>
+</html>

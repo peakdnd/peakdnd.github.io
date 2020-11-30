@@ -1,0 +1,177 @@
+/* HOME PAGE LAYOUT - PEAK_DND
+
+	PROJECT NAME: PEAK_DND WebSite
+	AUTHOR: TONY MADONNA
+	Developed at PeakDnD_Studios | http://peakdnd.com |
+
+	COLOR SCHEME:			FONTS:
+	darkerPurple: #0D1635;	Fredericka the Great 	MedievalSharp
+	darkPurple: #291A29;	VT323					
+	lightPurple: #4A394B;	Rye
+	logoGreen: #8CD982;		Gugi
+	sageGreen: #5E8F77;		Montserrat Subrayada
+	tealBlue: #4D636E;		Megrim
+	lightTeal: #537F86;		Trochut
+	lightningBlue: #323B53;	Uncial Antiqua
+	lightningRed: #5D4242;	Metal Mania
+	white: #F9F9F9;			Smythe
+	black: #000000;			New Rocker
+*/
+
+html {scroll-behavior: smooth;}
+body {background-color:#000000;}
+
+#Home {
+	background-color: #0D1635;
+	width: 1300px;
+	height: 1100px;
+	margin: auto;
+}
+
+img {z-index: -1; background-color: #323B53; width: 1300px; margin-top: -67px; border-top: 5px solid #F9F9F9;}
+
+#linkHome {
+	margin-left: 20px;
+	position: relative;
+}
+#linkHome a {font-family: 'peakdnd'; font-size: 25px; text-decoration: none; color: #5E8F77;}
+#linkHome a:hover {color: #F9F9F9;}
+
+/*--------------------------------------------------------------------------NAVIGATION MENU---------------------------------------------*/
+
+#pageLinks {
+	height: 65px;
+	width: 1300px;
+	display: grid;
+	grid-template-columns: 325px 325px 325px 325px;
+	text-align: center;
+	margin-top: -3px;
+}
+
+.dropbtn {
+	width: 325px;
+	font-family: 'peakdnd';
+	font-size: 24px;
+	text-shadow: 1px 1px 2px #F9F9F9;
+	background-color: #5E8F77;
+	cursor: pointer;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	max-height: 0px;
+	width: 325px;
+	overflow: hidden;
+	position: absolute;
+	background-color: #5E8F77;
+	z-index: 1;
+	transition: max-height 0.3s;
+}
+
+.dropdown-content a {
+	width: 290px;
+	text-align: right;
+	font-family: 'peakdnd';
+	color: #000000;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {background-color: #000000; color: #F9F9F9; border: 1px solid #F9F9F9;}
+.dropdown:hover .dropdown-content {display: block; max-height: 400px;}
+.dropdown:hover .dropbtn {background-color: #000000; color: #F9F9F9; text-shadow: 1px 1px 1px #5E8F77; transition: 0.2s;}
+
+/*-------------------------------------------------------------------------------------CONTENT-------------------------------------*/
+
+#prompts {
+	font-family: 'peakdnd';
+	color: #5E8F77;
+	font-size: 25px;
+	text-align: center;
+}
+
+#submit {
+	font-family: 'peakdnd';
+	color: #5E8F77;
+	font-size: 30px;
+	text-align: center;
+}
+
+#contactForm {
+	height: 550px;
+	width: 500px;
+	background-color: #323B53;
+	margin: auto;
+}
+
+form {
+	display: grid;
+	grid-template-columns: 100px 400px;
+}
+
+form p.name {
+	font-family: 'peakdnd';
+	font-size: 22px;
+	text-align: right;
+	margin-top: 50px;
+}
+
+form input.name {
+	width: 200px;
+	height: 25px;
+	margin-top: 46px;
+	font-size: 20px;
+	margin-left: 25px;
+	background-color: #808080;
+	cursor: pointer;
+}
+
+form p.email {
+	font-family: 'peakdnd';
+	font-size: 22px;
+	text-align: right;
+	margin-top: 15px;
+}
+
+form input.email {
+	height: 25px;
+	width: 300px;
+	margin-top: 15px;
+	margin-left: 25px;
+	font-size: 20px;
+	background-color: #808080;
+	cursor: pointer;
+}
+
+form p.query {
+	font-family: 'peakdnd';
+	font-size: 22px;
+	text-align: right;
+	margin-top: 0px;
+}
+
+form textarea.query {
+	height: 300px;
+	width: 350px;
+	margin-left: 25px;
+	font-size: 20px;
+	background-color: #808080;
+	cursor: pointer;
+}
+
+#contactForm button {
+	font-family: 'peakdnd';
+	width: 150px;
+	background-color: #5E8F77;
+	color: #0D1635;
+	margin-left: 175px;
+	margin-top: 30px;
+	cursor: pointer;
+}
+
+#contactForm button:hover {background-color: #0D1635; color: #5E8F77;}
