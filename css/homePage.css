@@ -50,7 +50,7 @@ body {background-color: #000000;}
 }
 .startSignUp:hover {opacity: 1; color: #000;}
 .sign-up-form {background-color: white; top: 50px; font-family:'peakdnd';}
-.sign-up-container {padding: 20px; margin-top: 50px;}
+.sign-up-container {padding: 20px; position: relative;}
 
 .sign-up-container input[type=text], input[type=password] {
 	width: 100%;
