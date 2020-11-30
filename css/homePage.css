@@ -46,11 +46,11 @@ body {background-color: #000000;}
 	border: none;
 	cursor: pointer;
 	width: 15%;
-	opacity: 0.8;
-}
-.startSignUp:hover {opacity: 1; color: #000;}
-.sign-up-form {background-color: white; top: 50px; font-family:'peakdnd';}
-.sign-up-container {padding: 20px; position: relative;}
+	opacity: 0.8;}
+
+.startSignUp:hover, .startSignUp:focus {opacity: 1; color: #000;}
+.sign-up-form {background-color: white; top: 100px; font-family:'peakdnd';}
+.sign-up-container {padding: 20px;}
 
 .sign-up-container input[type=text], input[type=password] {
 	width: 100%;
@@ -87,9 +87,9 @@ body {background-color: #000000;}
 	display: table;
 }
 
-.modal {
+.Login-SignUp {
 	display: none;
-	margin: auto;
+	margin-left: 130px;
 	z-index: 1;
 	width: 80%;
 	height: 80%;
@@ -100,7 +100,7 @@ body {background-color: #000000;}
 .close {
 	position: absolute;
 	top: 45px;
-	right: 430px;
+	left: 430px;
 	font-size: 40px;
 	font-weight: bold;
 	color: #f1f1f1;
