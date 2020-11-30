@@ -46,9 +46,9 @@ body {background-color: #000000;}
 	width: 15%;
 	opacity: 0.8;
 }
-.startSignUp:hover {opacity: 1; color: #000;}
+.startSignUp:hover {opacity: 1; color: #000; margin-right: 0px;}
 .sign-up-form {background-color: white; top: 50px; font-family:'peakdnd';}
-.sign-up-container {padding: 20px; margin-right:0px;}
+.sign-up-container {padding: 20px; float: right;}
 
 .sign-up-container input[type=text], input[type=password] {
 	width: 100%;
