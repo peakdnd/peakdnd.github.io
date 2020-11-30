@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>PEAKED INTERESTS</title>
+		<meta name="description" content="">
+		<meta name="author" content="Tony Madonna">
+		<meta http-equiv="refresh" content="">
+		<meta name="viewport" content="width=device-width, inital-scale=1.0">
+
+		<link rel="stylesheet" href="../css/normalize.css">
+		<link rel="stylesheet" href="../css/peakedInterestsPage.css">
+		<link href='https://fonts.googleapis.com/css?family=Croissant One' rel='stylesheet'>
+		<link rel="stylesheet" href="../fonts/webfontkit-peakDnD/stylesheet.css" type="text/css">
+
+		<script src="https://kit.fontawesome.com/3ba375246e.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		
+	</head>
+	
+	<body>
+
+		<div id="Home">
+
+			<div id="pageLinks">
+				<div class="dropdown">
+					<a href="peakCampaignVids.html" target=""><button class="dropbtn">CAMPAIGN <br/> VIDEOS</button></a>
+						<div class="dropdown-content">
+							<a href="peakIntoTheFey.html" target="">INTO THE FEY</a>
+							<a href="" target="">RIME OF THE FROSTMAIDEN</a>
+							<a href="" target="">ICEWINDALE</a>
+						</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn">CAMPAIGN <br/> DIARIES</button>
+						<div class="dropdown-content">
+							<a href="" target="" style="font-size: ;">PLAYERS</a>
+							<a href="" target="" style="font-size: ;">DUNGEON MASTER</a>
+						</div>
+				</div>
+				<div class="dropdown">
+					<a href="peakContact.html" target=""><button class="dropbtn">CONTACT <br/> US</button></a>
+				</div>
+				<div class="dropdown">
+					<a href="peakInterests.html" target=""><button class="dropbtn">PEAKED <br/> INTERESTS</button></a>
+						<div class="dropdown-content">
+							<a onclick="showPanel(0,'#290404','#5E8F77')">HOW TO PLAY</a>
+							<a onclick="showPanel(1,'#290404','#291A29')">D&D PHILOSOPHY</a>
+							<a onclick="showPanel(2,'#290404','#4D636E')">DUNGEON MASTER TIPS</a>
+							<a onclick="showPanel(3,'#290404','#323B53')">HOUSE TABLE RULES</a>
+						</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn">CRITICAL <br/> GEAR</button>
+						<div class="dropdown-content">
+							<a href="https://teespring.com/stores/peakdnd" target="_blank" style="font-size: ;">TEESPRING</a>
+							<a href="https://www.redbubble.com/people/peakdnd/shop" target="_blank" style="font-size: ;">REDBUBBLE</a>
+						</div>
+				</div>
+			</div>
+
+			<h2 id="linkHome"><a href="peakHome.html">HOME</a></h2>
+			<img src="../banners/peaklogo-lightningBanner.jpg" class="center">
+
+
+			<form id="searchForm" class="search2" method="get" action="peakHome.html">
+  					<input id="homeSearch" class="search2" type="text" placeholder="Search.." name="search">
+  					<input class="search2" type="hidden" name="siteserach" value="peakHome.html">
+					<button type="submit"><i class="fab fa-searchengin"></i></button>
+			</form>
+			
+			<div class="tabContainer">
+				<div class="buttonContainer">
+					<button onclick="showPanel(0,'#290404','#5E8F77')">HOW TO<br/>PLAY</button>
+					<button onclick="showPanel(1,'#290404','#291A29')">D&D<br/>PHILOSOPHY</button>
+					<button onclick="showPanel(2,'#290404','#4D636E')">DUNGEON MASTER<br/>TIPS</button>
+					<button onclick="showPanel(3,'#290404','#323B53')">HOUSE TABLE<br/>RULES</button>
+				</div>
+				<div id="howToPlay" class="tabPanel">
+					<h2>HOW TO PLAY</h2>
+					<p>Learning the basics or rule nuiances, we can show you how to get started,,,</p>
+				</div>
+				<div id="dndPhilosophy" class="tabPanel">
+					<h2>D&D PHILOSOPHY</h2>
+					<p>This is how we approach the game,,,</p>
+				</div>
+				<div id="dungeonMasterTips" class="tabPanel">
+					<h2>DUNGEON MASTER TIPS</h2>
+					<p>Trying your hand at running your own game? We have all been in the DM hot seat before, and we will impart our experiences on to you,,,</p>
+				</div>
+				<div id="houseTableRules" class="tabPanel">
+					<h2>HOUSE TABLE RULES</h2>
+					<p>Every table has them! Here a few we have found and use, as well as some we have experimented with!</p>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div id="links" class="links">
+				<a href="" target=""><h4>ABOUT</h4></a>
+				<a href="peakContact.html" target=""><h4>CONTACT US</h4></a>
+			</div>
+			<div></div>
+			<div id="socialMedia" class="socialMedia">
+				<a href="https://www.instagram.com/peakdnd/" target="_blank"><button id="instagram" type="submit"><i class="fab fa-instagram"></i></button></a>
+				<a href="https://www.youtube.com/channel/UCwrC2xURgzXyUSNdnJJ9nsQ" target="_blank"><button id="youtube" type="submit"><i class="fab fa-youtube"></i></button></a>
+			</div>
+		</footer>
+
+	</body>
+
+<script src="../js/peakInterests.js"></script>
+<script type="text/javascript">
+	document.getElementById('searchForm').onsubmit = function () {
+		window.location = 'http://google.com/' + document.getElementbyID('homeSearch').value;
+		return false;
+	}
+</script>
+
+</html>
