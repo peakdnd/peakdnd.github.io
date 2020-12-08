@@ -34,7 +34,7 @@ body {background-color: #000000;}
 
 * {box-sizing: border-box;}
 
-.startSignUp {
+.startSubscribe {
 	font-family: 'peakdnd';
 	font-size: 22px;
 	background-color: #5E8F77;
@@ -46,9 +46,10 @@ body {background-color: #000000;}
 	border: none;
 	cursor: pointer;
 	width: 15%;
-	opacity: 0.8;}
+	opacity: 0.8;
+}
 
-.startSignUp:hover, .startSignUp:focus {opacity: 1; color: #000;}
+.startSubscribe:hover, .startSubscribe:focus {opacity: 1; color: #000;}
 .sign-up-form {background-color: white; top: 100px; font-family:'peakdnd';}
 .sign-up-container {padding: 20px;}
 
@@ -89,24 +90,14 @@ body {background-color: #000000;}
 
 .Login-SignUp {
 	display: none;
-	margin-left: 130px;
+	font-size: 12px;
+	margin-left: 100px;
 	z-index: 1;
 	width: 80%;
-	height: 80%;
+	height: 400px;
 	overflow: auto;
 	padding-top: 30px;
-}
-
-.close {
-	margin-left: 10px;
-	font-size: 40px;
-	font-weight: bold;
-	color: #f1f1f1;
-}
-.close:hover,
-.close:focus {
-	color: #f44336;
-	cursor: pointer;
+	transition: 1s;
 }
 
 @media screen and (max-width: 300px) {
