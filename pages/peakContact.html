@@ -25,7 +25,7 @@
 		<div id="Home">
 
 			<h2 id="linkHome"><a href="peakHome.html">HOME</a></h2>
-			<img src="../banners/contactUs-trans.png" class="center">
+			<img class="banner" src="../banners/contactUs-trans.png" class="center">
 
 			<div id="pageLinks">
 				<div class="dropdown">
@@ -61,19 +61,40 @@
 				</div>
 			</div>
 
-			<p id="prompts">Having trouble finding something?<br/> Have questions about any of our content? Want to connect with one of us?</p>
+			<p id="prompts">Having trouble finding something?<br/> Have questions about any of our content?</p>
 			<p id="submit">Submit your sidequest and after a long rest, we will do our best to complete it!</p>
 
-			<div id="contactForm">
-				<form id="contactUs" action="mailto:tmadonna22@gmail.com" method="get" enctype="multipart/form-data" name="emailForm">
-					<p class="name">NAME:</p>
-					<input type="text" name="contactName" class="name">
-					<p class="email">EMAIL:</p>
-					<input type="EMAIL" name="userEmail" class="email">
-					<p class="query">QUERY:</p>
-					<textarea name="message" class="query"></textarea>
-					<button class="sendQuery" type="submit" action="contact.php" value="submit"><label>ROLL TO HIT</label><br><i class="fas fa-dice-d20"></i></button>
-				</form>
+			<div id="generalQuery">
+				<button class="generalSending" onclick="location.href='mailto:info@peakdnd.com'">Cast Sending<br><i class="fas fa-dice-d20"></i></button>
+			</div>
+
+			<p id="prompts">Want to connect with one of us? Or have a specific quest for one of our PCs?</p>
+
+			<div id="contacts">
+				<div id="contactNick">
+					<h2>Nick Hale (DM)</h2>
+					<img class="contactImg" src="../media/contact-Nick.jpg" alt="Contact Nick" width="150" height="150">
+					<br>
+					<button class="castSending" onclick="location.href='mailto:nick@peakdnd.com'">Cast Sending<br><i class="fas fa-dice-d20"></i></button>
+				</div> 
+				<div id="contactTony">
+					<h2>Tony Madonna</h2>
+					<img class="contactImg" src="../media/contact-Tony.jpg" alt="Contact Tony" width="150" height="150">
+					<br>
+					<button class="castSending" onclick="location.href='mailto:tony@peakdnd.com'">Cast Sending<br><i class="fas fa-dice-d20"></i></button>
+				</div>
+				<div id="contactBen">
+					<h2>Ben Whitmore</h2>
+					<img class="contactImg" src="../media/contact-Ben.jpg" alt="Contact Ben" width="150" height="150">
+					<br>
+					<button class="castSending" onclick="location.href='mailto:ben@peakdnd.com'">Cast Sending<br><i class="fas fa-dice-d20"></i></button>
+				</div>
+				<div id="contactMax">
+					<h2>Max Sirak</h2>
+					<img class="contactImg" src="../media/contact-Max.jpg" alt="Contact Max" width="150" height="150">
+					<br>
+					<button class="castSending" onclick="location.href='mailto:max@peakdnd.com'">Cast Sending<br><i class="fas fa-dice-d20"></i></button>
+				</div>
 			</div>
 		</div>
 	

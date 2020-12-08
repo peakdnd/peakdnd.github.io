@@ -24,11 +24,11 @@ body {background-color:#000000;}
 #Home {
 	background-color: #0D1635;
 	width: 1300px;
-	height: 1100px;
+	height: 1200px;
 	margin: auto;
 }
 
-img {z-index: -1; background-color: #323B53; width: 1300px; margin-top: -67px; border-top: 5px solid #F9F9F9;}
+.banner {z-index: -1; background-color: #323B53; width: 1300px; margin-top: -67px; border-top: 5px solid #F9F9F9;}
 
 #linkHome {
 	margin-left: 20px;
@@ -102,76 +102,117 @@ img {z-index: -1; background-color: #323B53; width: 1300px; margin-top: -67px; b
 	text-align: center;
 }
 
-#contactForm {
-	height: 550px;
-	width: 500px;
-	background-color: #323B53;
-	margin: auto;
-}
-
-form {
-	display: grid;
-	grid-template-columns: 100px 400px;
-}
-
-form p.name {
-	font-family: 'peakdnd';
-	font-size: 22px;
-	text-align: right;
-	margin-top: 50px;
-}
-
-form input.name {
-	width: 200px;
-	height: 25px;
-	margin-top: 46px;
-	font-size: 20px;
-	margin-left: 25px;
-	background-color: #808080;
-	cursor: pointer;
-}
-
-form p.email {
-	font-family: 'peakdnd';
-	font-size: 22px;
-	text-align: right;
-	margin-top: 15px;
-}
-
-form input.email {
-	height: 25px;
-	width: 300px;
-	margin-top: 15px;
-	margin-left: 25px;
-	font-size: 20px;
-	background-color: #808080;
-	cursor: pointer;
-}
-
-form p.query {
-	font-family: 'peakdnd';
-	font-size: 22px;
-	text-align: right;
-	margin-top: 0px;
-}
-
-form textarea.query {
+#generalQuery {
+	width: 1300px;
 	height: 300px;
-	width: 350px;
-	margin-left: 25px;
-	font-size: 20px;
-	background-color: #808080;
-	cursor: pointer;
 }
-
-#contactForm button {
+.generalSending {
 	font-family: 'peakdnd';
-	width: 150px;
+	font-size: 30px;
 	background-color: #5E8F77;
-	color: #0D1635;
-	margin-left: 175px;
-	margin-top: 30px;
+	margin-top: 10px;
+	margin-left: 500px;
+	color: #000;
+	width: 300px;
+	border: 2px solid #F9F9F9;
 	cursor: pointer;
+	outline: none;
+	opacity: 80%;
+	transition: 1s;
+}
+.generalSending:hover {
+	opacity: 100%;
+	transition: 1s;
+	box-shadow: 5px 5px 50px 10px #F9F9F9;
 }
 
-#contactForm button:hover {background-color: #0D1635; color: #5E8F77;}
+#contacts {
+	display: grid;
+	grid-template-columns: 325px 325px 325px 325px;
+}
+
+#contactNick {
+	font-family: 'peakdnd';
+	font-size: 25px;
+	width: 300px;
+	color: #000;
+	background-color: #323B53;
+	border-radius: 12px;
+	margin: auto;
+	text-decoration: none;
+	padding: 8px;
+	transition: 1s;
+}
+#contactNick h2 {text-align: center; margin-top: 0px;}
+#contactNick img {margin-left: 75px; margin-top: -10px;}
+#contactNick button {margin-left: 50px; margin-top: 15px;}
+#contactNick:hover {background-color: #000; color: #5E8F77; transition: 1s}
+
+#contactTony {
+	font-family: 'peakdnd';
+	font-size: 25px;
+	width: 300px;
+	color: #000;
+	background-color: #323B53;
+	border-radius: 12px;
+	margin: auto;
+	text-decoration: none;
+	padding: 8px;
+	transition: 1s;
+}
+#contactTony h2 {text-align: center; margin-top: 0px;}
+#contactTony img {margin-left: 75px; margin-top: -10px;}
+#contactTony button {margin-left: 50px; margin-top: 15px;}
+#contactTony:hover {background-color: #000; color: #5E8F77; transition: 1s;}
+
+#contactBen {
+	font-family: 'peakdnd';
+	font-size: 25px;
+	width: 300px;
+	color: #000;
+	background-color: #323B53;
+	border-radius: 12px;
+	margin: auto;
+	text-decoration: none;
+	padding: 8px;
+	transition: 1s;
+}
+#contactBen h2 {text-align: center; margin-top: 0px;}
+#contactBen img {margin-left: 75px; margin-top: -10px;}
+#contactBen button {margin-left: 50px; margin-top: 15px;}
+#contactBen:hover {background-color: #000; color: #5E8F77; transition: 1s;}
+
+#contactMax {
+	font-family: 'peakdnd';
+	font-size: 25px;
+	width: 300px;
+	color: #000;
+	background-color: #323B53;
+	border-radius: 12px;
+	margin: auto;
+	text-decoration: none;
+	padding: 8px;
+	transition: 1s;
+}
+#contactMax h2 {text-align: center; margin-top: 0px;}
+#contactMax img {margin-left: 75px; margin-top: -10px;}
+#contactMax button {margin-left: 50px; margin-top: 15px;}
+#contactMax:hover {background-color: #000; color: #5E8F77; transition: 1s;}
+
+.castSending {
+	font-family: 'peakdnd';
+	font-size: 20px;
+	background-color: #5E8F77;
+	color: #000;
+	margin: auto;
+	width: 200px;
+	cursor: pointer;
+	opacity: 75%;
+	transition: 0.5s;
+}
+
+.castSending:hover {
+	opacity: 100%;
+	box-shadow: 1px 1px 20px 1px #F9F9F9;
+	transition: 0.5s;
+}
