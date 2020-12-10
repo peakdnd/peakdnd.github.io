@@ -8,7 +8,7 @@
 		<meta name="description" content="">
 		<meta name="author" content="Tony Madonna">
 		<meta http-equiv="refresh" content="">
-		<meta name="viewport" content="width=device-width, inital-scale=1.0">
+		<meta name="viewport" content="width=device-width" inital-scale="1.0">
 
 		<link rel="stylesheet" href="../css/normalize.css">
 		<link rel="stylesheet" href="../css/homePage.css">
@@ -27,18 +27,18 @@
 			<button class="startSubscribe" onclick="document.getElementById('id01').style.display='block'">Subscribe</button>
 
 			<div id="id01" class="Login-SignUp">
-				<form action="sign_up.php" class="sign-up-form">
+				<form class="sign-up-form">
 					<div class="sign-up-container">
 						<h1>Subscribe</h1>
 						<p>Enter your email to recieve quest updates!</p>
 						<hr>
 						<label for="email"><b>Email</b></label>
-						<input type="text" placeholder="Enter Email" name="email" required>
+						<input id="userEmail" type="text" placeholder="Enter Email" name="email" required>
 						<input type="checkbox" required><label>By subscribing. you opt-in to recieving emails and newsletters and agree to our <a href="" target="">Adventurer's Hazards & Guidelines</a>.</p></label>
 
 						<div class="clear-fix">
 							<button onclick="document.getElementById('id01').style.display='none'" type="button" class="cancelbtn">Cancel</button>
-							<button type="submit" class="signupbtn" value="Submit">Subscribe</button>
+							<button onclick="subscribe()" type="submit" class="signupbtn" value="Submit">Subscribe</button>
 						</div>
 					</div>
 				</form>
@@ -104,6 +104,5 @@
 		</footer>
 		
 		<script src="../js/peakHome.js"></script>
-		<script src="../js/signUp-popup.js"></script>
 	</body>
 </html>
