@@ -27,20 +27,22 @@
 			<button class="startSubscribe" onclick="document.getElementById('id01').style.display='block'">Subscribe</button>
 
 			<div id="id01" class="Login-SignUp">
-				<div class="sign-up-form">
-					<div class="sign-up-container">
-						<h1>Subscribe</h1>
-						<p>Enter your email to recieve quest updates!</p>
-						<hr>
-						<label for="email"><b>Email</b></label>
-						<input id="userEmail" type="text" placeholder="Enter Email" name="email" required>
-						<input type="checkbox" required><label>By subscribing. you opt-in to recieving emails and newsletters and agree to our <a href="" target="">Adventurer's Hazards & Guidelines</a>.</p></label>
-
-						<div class="clear-fix">
-							<button onclick="document.getElementById('id01').style.display='none'" type="button" class="cancelbtn">Cancel</button>
-							<button onclick="subscribe()" type="submit" class="signupbtn" value="Submit">Subscribe</button>
-						</div>
+				<div class="subscribe-container">
+					<div class="subscribe-content">
+						<h2>BECOME A SUBSCRIBER!</h2>
+						<p>Enter your email to get updates and new quests!</p>
 					</div>
+					<hr>
+					<form action="#" class="subscribe-form">
+						<div class="email-field">
+							<input type="text" placeholder="Your Email Address" name="userEmail" required>
+						</div>
+						<div class="submit-cancel">
+							<button type="submit">SUBSCRIBE</button>
+							<button type="submit" onclick="document.getElementById('id01').style.display='none'">CANCEL</button>
+						</div>
+						<p>By clicking 'Subscribe'. you agree to our <a href="" target="_blank">Adventurer's Hazards and Guidelines</a>,</p>
+					</form>
 				</div>
 			</div>
 
